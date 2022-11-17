@@ -7,6 +7,7 @@
  * @count: this variable counts the number of commands that are passed
  * @stnd_exit: an integer static
  * Return: returns no value (void)
+ *
  */
 
 void forkExec(int status, char **args, int *count, itn *stnd_exit)
