@@ -30,9 +30,9 @@ int funct_ctrlD(char *string, ssize_t read, int *stad_exit)
 	}
 	while (string[i] != '\n')
 	{
-		if (string[i] != ' ' && string[i] != '\t')
+		if (string[a] != ' ' && string[a] != '\t')
 			return (0);
-		++i;
+		++a;
 	}
 	*stad_exit = 0;
 	return (127);
