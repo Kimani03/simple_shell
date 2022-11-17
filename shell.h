@@ -27,10 +27,10 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 /* Basic process of shell */
 int main(int argc, char *argv[], char *env[]);
 int shell_loop(char **env);
-char *read_command(vhar **env);
+char *_readCmd(vhar **env);
 char *split_command(char *string);
 void forkExec(int status, char **argv, int *count, int *stad_exit);
-void rm_new_line(char *string);
+void rm_newLine(char *string);
 int _path(char *args, char **argv, char **env, int *stad_exit);
 char *print_path(char *der, char *args);
 char **_parser(char *string);
@@ -39,7 +39,7 @@ void built_in(char *string, char **argv, char **env, int *exi_t);
 void sim_printShell(char *string);
 void print_count(int *count);
 int _putchar(char c);
-int func_ctrl_d(char *string, ssize_t read, int *stad_exit);
+int func_ctrlD(char *string, ssize_t read, int *stad_exit);
 
 /* finction signal */
 void sign_handler(int signal);
