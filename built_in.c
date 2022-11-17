@@ -19,3 +19,4 @@ void built_in(char *string, char **argv, char **enviro, int *exi_t)
 	if (_strcmp(argv[0], "enviro") == 0)
 		printenv(enviro, exi_t);
 }
+
