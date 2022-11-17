@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _parser - this function works by allocating memory and tokenizing
+ * _parser - function works by allocating memory and tokenizing
  * @string: this is the argument that has been passed and saved on getline
  * Return: returns a double pointer
  */
