@@ -10,7 +10,7 @@
  *
  */
 
-void forkExec(int status, char **args, int *count, itn *stnd_exit)
+void forkExec(int status, char **args, int *count, int *stad_exit)
 {
 	if (status == 2)
 	{
@@ -55,7 +55,6 @@ void printCount(int *count)
 {
 	int i, n, cont = 0, len = 0;
 	unsigned int base = 1, max, a;
-:
 	n = *count;
 	max = n;
 	a = max;

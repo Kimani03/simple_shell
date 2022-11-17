@@ -17,13 +17,13 @@ char *_readCmd(char **env)
 	int a = 0, status, num_arg;
 	static int count, stad_exit;
 
-	if (signal(SIGINT, sighandler) == SIG_ERR)
+	if (signal(SIGINT, sign_handler()) == SIG_ERR)
 		perror("error:\n");
 	while (1 == 1)
 	{
 		if (isatty(STDIN_FILENO) == 1)
 			sim_printShell("shell$ ");
-		read = getline(&string, &bufsize, stdin);
+		read = getline(&string, &bufSize, stdin);
 		++count;
 		if (func_ctrlD(string, read, &stad_exit) == 127)
 			continue;
