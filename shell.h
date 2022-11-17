@@ -7,7 +7,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
-#include <stlib.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <fcntl.h>
@@ -26,7 +26,7 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 /* Basic process of shell */
 int main(int argc, char *argv[], char *env[]);
 int shell_loop(char **env);
-char *_readCmd(vhar **env);
+char *_readCmd(char **env);
 char *split_command(char *string);
 void forkExec(int status, char **argv, int *count, int *stad_exit);
 void rm_newLine(char *string);

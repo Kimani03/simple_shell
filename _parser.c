@@ -31,9 +31,9 @@ char **_parser(char *string)
 
 	while (parsed2 != NULL)
 	{
-		arg[i] = parsed2;
+		args[i] = parsed2;
 		parsed2 = strtok(NULL, "\n\t\r");
-		i++
+		i++;
 	}
 
 	args[i] = NULL;
