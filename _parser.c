@@ -14,8 +14,8 @@ char **_parser(char *string)
 	char *linecopy = NULL;
 	int arg_num = 0, i = 0;
 
-	linecopy = _strdup(string);
-	parsed = strtok(linecopy, "\n\t\r");
+				linecopy = _strdup(string);
+			parsed = strtok(linecopy, "\n\t\r");
 
 	while (parsed != NULL)
 	{
