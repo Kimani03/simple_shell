@@ -7,6 +7,7 @@
  * @env: variables of the environment
  * #stad_exit: the exit command
  * Return: returns 0 on success
+ *
  */
 
 int _path(char *args, char **argv, char **env, int *stad_exit)
