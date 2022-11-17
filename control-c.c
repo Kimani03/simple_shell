@@ -3,6 +3,7 @@
 /**
  * sign_handler - this function deals with keyboard interrupt signals
  * @signal: signal being handled
+ *
  */
 
 void sign_handler(int signal)
