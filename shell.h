@@ -34,7 +34,7 @@ void rm_new_line(char *string);
 int _path(char *args, char **argv, char **env, int *stad_exit);
 char *print_path(char *der, char *args);
 char **_parser(char *string);
-int printenv(char **env, int *stad_exit);
+int printEnv(char **env, int *stad_exit);
 void built_in(char *string, char **argv, char **env, int *exi_t);
 void sim_printShell(char *string);
 void print_count(int *count);
